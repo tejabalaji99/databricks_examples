@@ -63,7 +63,7 @@ SELECT * FROM (
     order_id,
     FILTER (items, i -> i.item_id LIKE "%K") AS king_items
   FROM sales)
-WHERE size(king_items) > 0
+WHERE size(king_items) > 1
 
 -- COMMAND ----------
 
